@@ -1,3 +1,5 @@
 .DS_Store
 build
 release
+quickchm.xcodeproj/project.xcworkspace/
+quickchm.xcodeproj/xcuserdata/
