@@ -90,10 +90,13 @@ void processHrefNode(xmlNode * cur_node, const char *hrefHostPath, const char *h
 				
 		// create onclick
 		char *prefix = "document.location.href='";
-		char *script = calloc(strlen(prefix) + strlen(newUrl) + 1, sizeof(char));
-		strcpy(script, prefix);
-		strcat(script, newUrl);
-		strcat(script, "'");
+		uint32_t len = strlen(prefix) + strlen(newUrl) + 2;
+        char *script = calloc(len, sizeof(char));
+
+        strncpy(script, prefix, len);
+		strncat(script, newUrl, len);
+		strncat(script, "'", len);
+		script[len-1] = 0;
 		NSLog([NSString stringWithFormat:@"%@%@%@%@", @"QuickChm Adaptor : Change ", [NSString stringWithCString:url], @" to ", [NSString stringWithCString:script]]);
 		
 		// create javascript attribute
