@@ -188,9 +188,11 @@ typedef unsigned long           UInt64;
 
 /* GCC */
 #ifdef __GNUC__
+#if !__APPLE__
 #define memcmp __builtin_memcmp
 #define memcpy __builtin_memcpy
 #define strlen __builtin_strlen
+#endif
 
 #elif defined(WIN32)
 static int ffs(unsigned int val)
