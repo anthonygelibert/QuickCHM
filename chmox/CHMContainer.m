@@ -72,6 +72,7 @@
     [_homePath release];
     [_tocPath release];
     [_indexPath release];
+    [super dealloc];
 }
 
 

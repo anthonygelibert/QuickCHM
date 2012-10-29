@@ -32,10 +32,6 @@
     
 @private
     CHMTableOfContents *_tableOfContents;
-
-    NSMutableArray *_bookmarks;
-    NSMutableArray *_searchResults;
-
 }
 
 - (NSString *)title;
