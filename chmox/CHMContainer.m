@@ -20,6 +20,8 @@
 //
 
 #include <openssl/sha.h>
+#include <stdint.h>
+
 #import "CHMContainer.h"
 #import "chm_lib.h"
 
@@ -105,9 +107,9 @@ static inline unsigned short readShort( NSData *data, unsigned int offset ) {
     return NSSwapLittleShortToHost( value );
 }
 
-static inline unsigned long readLong( NSData *data, unsigned int offset ) {
+static inline uint32_t readLong( NSData *data, unsigned int offset ) {
     NSRange valueRange = { offset, 4 };
-    unsigned long value;
+    uint32_t value;
     
     [data getBytes:(void *)&value range:valueRange];
     return NSSwapLittleLongToHost( value );
@@ -202,30 +204,30 @@ static inline NSString * readTrimmedString( NSData *data, unsigned long offset )
     NSData *stringsData = [self dataWithContentsOfObject:@"/#STRINGS"];
 
     if( windowsData && stringsData ) {
-	const unsigned int entryCount = readLong( windowsData, 0 );
-	const unsigned int entrySize = readLong( windowsData, 4 );
+	const uint32_t entryCount = readLong( windowsData, 0 );
+	const uint32_t entrySize = readLong( windowsData, 4 );
 	NSLog( @"Entries: %u@ x %u bytes", entryCount, entrySize );
 	
-	for(unsigned int entryIndex = 0; entryIndex < entryCount; ++entryIndex ) {
-	    unsigned int entryOffset = 8 + ( entryIndex * entrySize );
+	for(uint32_t entryIndex = 0; entryIndex < entryCount; ++entryIndex ) {
+	    uint32_t entryOffset = 8 + ( entryIndex * entrySize );
 	    
 	    if( !_title || ( [_title length] == 0 ) ) { 
-		_title = readTrimmedString( stringsData, (unsigned int)readLong( windowsData, entryOffset + 0x14 ) );
+		_title = readTrimmedString( stringsData, readLong( windowsData, entryOffset + 0x14 ) );
 		NSLog( @"Title: %@", _title );
 	    }
 	    
 	    if( !_tocPath || ( [_tocPath length] == 0 ) ) { 
-		_tocPath = readString( stringsData, (unsigned int)readLong( windowsData, entryOffset + 0x60 ) );
+		_tocPath = readString( stringsData, readLong( windowsData, entryOffset + 0x60 ) );
 		NSLog( @"Table of contents: %@", _tocPath );
 	    }
 	    
 	    if( !_indexPath || ( [_indexPath length] == 0 ) ) { 
-		_indexPath = readString( stringsData, (unsigned int)readLong( windowsData, entryOffset + 0x64 ) );
+		_indexPath = readString( stringsData, readLong( windowsData, entryOffset + 0x64 ) );
 		NSLog( @"Index: %@", _indexPath );
 	    }
 	    
 	    if( !_homePath || ( [_homePath length] == 0 ) ) { 
-		_homePath = readString( stringsData, (unsigned int) readLong( windowsData, entryOffset + 0x68 ) );
+		_homePath = readString( stringsData, readLong( windowsData, entryOffset + 0x68 ) );
 		NSLog( @"Home: %@", _homePath );
 	    }
 	}
