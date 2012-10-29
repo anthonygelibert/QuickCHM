@@ -697,7 +697,7 @@ static Int64 _chm_fetch_bytes(struct chmFile *h,
                               UInt64 os,
                               Int64 len)
 {
-    Int64 readLen=0, oldOs=0;
+    Int64 readLen=0;
     if (h->fd  ==  CHM_NULL_FD)
         return readLen;
 
@@ -767,7 +767,6 @@ struct chmFile *chm_open(const char *filename)
     struct chmFile             *newHandle=NULL;
     struct chmItsfHeader        itsfHeader;
     struct chmItspHeader        itspHeader;
-    struct chmUnitInfo          uiSpan;
     struct chmUnitInfo          uiLzxc;
     struct chmLzxcControlData   ctlData;
 
