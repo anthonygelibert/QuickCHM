@@ -64,12 +64,6 @@
     return YES;
 }
 
-- (NSData *)dataRepresentationOfType:(NSString *)type {
-    // Viewer only
-    return nil;
-}
-
-
 #pragma mark Accessors
 
 - (NSString *)title
