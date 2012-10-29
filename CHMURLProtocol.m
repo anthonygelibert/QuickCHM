@@ -53,6 +53,7 @@ static NSMutableDictionary *containerReg = nil;
         );
         
         url = [NSURL URLWithString:(NSString*)str relativeToURL:baseURL];
+        [(id)str release];
     }
     
     return url;
