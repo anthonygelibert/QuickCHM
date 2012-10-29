@@ -24,9 +24,6 @@
 #import "CHMTableOfContents.h"
 #import "CHMURLProtocol.h"
 
-static NSMutableArray *_bookmarks;
-static NSMutableArray *_searchResults;
-
 @implementation CHMDocument
 
 #pragma mark NSObject
