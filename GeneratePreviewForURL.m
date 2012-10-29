@@ -57,7 +57,8 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 		CFDataRef newData = adaptPage(data, doc->_container, homeUrl, &props);
 		
 		QLPreviewRequestSetDataRepresentation(preview, newData, kUTTypeHTML, (CFDictionaryRef)props);
-	}
+    }
+    [doc release];
 	[pool release];
 	
 	xmlCleanupParser();
