@@ -30,13 +30,13 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.QuickChmQL</string>
+	<string>com.ag.QuickChmQL</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFPlugInDynamicRegisterFunction</key>
 	<string></string>
 	<key>CFPlugInDynamicRegistration</key>
@@ -56,11 +56,11 @@
 	<key>CFPlugInUnloadFunction</key>
 	<string></string>
 	<key>QLSupportsConcurrentRequests</key>
-	<false/>
+	<true/>
 	<key>QLNeedsToBeRunInMainThread</key>
 	<true/>
 	<key>QLThumbnailMinimumSize</key>
-	<real>17</real>
+	<integer>16</integer>
 	<key>UTImportedTypeDeclarations</key>
 	<array>
 		<dict>
