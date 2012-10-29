@@ -11,8 +11,9 @@
 
 
 char *concateString(const char *s1, const char *s2) {
-	char *s = calloc(strlen(s1) + strlen(s2) + 1, sizeof(char));
-	strcpy((char *)s, (char *)s1);
-	strcat((char *)s, (char *)s2);
+	unsigned int len = strlen(s1) + strlen(s2) + 1;
+    char *s = calloc(len, sizeof(char));
+	strncpy((char *)s, (char *)s1, len);
+	strncat((char *)s, (char *)s2, len);
 	return s;
 }
