@@ -42,9 +42,11 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
 	xmlInitParser();
 	LIBXML_TEST_VERSION;
 	
+#if DEBUG_MODE
 	BOOL success = [NSURLProtocol registerClass:[CHMURLProtocol class]];
 	DEBUG_OUTPUT([NSString stringWithFormat:@"NSURLProtocol registration %@", success ? @"SUCCESS" : @"FAIL"]);
-	
+#endif
+    
 	NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
 	CHMDocument *doc = [[CHMDocument alloc] init];
 	
