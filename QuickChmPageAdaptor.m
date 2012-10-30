@@ -97,7 +97,7 @@ void processHrefNode(xmlNode * cur_node, const char *hrefHostPath, const char *h
 		strncat(script, newUrl, len);
 		strncat(script, "'", len);
 		script[len-1] = 0;
-		NSLog([NSString stringWithFormat:@"%@%@%@%@", @"QuickChm Adaptor : Change ", [NSString stringWithCString:url], @" to ", [NSString stringWithCString:script]]);
+		DEBUG_OUTPUT([NSString stringWithFormat:@"%@%@%@%@", @"QuickChm Adaptor : Change ", [NSString stringWithCString:url], @" to ", [NSString stringWithCString:script]]);
 		
 		// create javascript attribute
 		xmlNewProp(cur_node, ONCLICK, (xmlChar *)script);
@@ -122,7 +122,7 @@ void processImgNodeToUrl(xmlNode * cur_node, const char *imgHostPath, const char
 	char *newSrc = (*src == '/') ? 
 		concateString(imgHostPath, src) : concateString(imgRelativePath, src);
 	
-	NSLog([NSString stringWithFormat:@"%@%@%@%@", @"QuickChm Adaptor : Change ", [NSString stringWithCString:src], @" to ", [NSString stringWithCString:newSrc]]);
+	DEBUG_OUTPUT([NSString stringWithFormat:@"%@%@%@%@", @"QuickChm Adaptor : Change ", [NSString stringWithCString:src], @" to ", [NSString stringWithCString:newSrc]]);
 	
 	xmlSetProp(cur_node, SRC, (xmlChar *)newSrc);
 	
@@ -160,7 +160,7 @@ void processImgNodeToDict(xmlNode * cur_node, NSURL *baseUrl, NSString *pageDir,
 	// finally, update the src attr
 	char *newSrc = concateString("cid:", [imgSrc UTF8String]);
 	
-	NSLog([NSString stringWithFormat:@"%@%@%@%@", @"QuickChm Adaptor : Change ", [NSString stringWithCString:src], @" to ", [NSString stringWithCString:newSrc]]);
+	DEBUG_OUTPUT([NSString stringWithFormat:@"%@%@%@%@", @"QuickChm Adaptor : Change ", [NSString stringWithCString:src], @" to ", [NSString stringWithCString:newSrc]]);
 	
 	xmlSetProp(cur_node, SRC, (xmlChar *)newSrc);
 	

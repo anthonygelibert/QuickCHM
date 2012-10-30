@@ -189,7 +189,7 @@ static void elementDidStart( TOCBuilderContext *context, const xmlChar *name, co
 	    }
 	    else {
 		// Unsupported topic property
-		//NSLog( @"type=%s  value=%s", type, value );
+		//DEBUG_OUTPUT( @"type=%s  value=%s", type, value );
 	    }
 	}
     }

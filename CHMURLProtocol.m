@@ -63,7 +63,7 @@ static NSMutableDictionary *containerReg = nil;
 #pragma mark NSURLProtocol overriding
 + (BOOL)canInitWithRequest:(NSURLRequest *)request
 {
-	NSLog(@"Load URL query");
+	DEBUG_OUTPUT(@"Load URL query");
 	NSURL *url = [request URL];
 	NSString *scheme = [url scheme];
 	NSString *host = [url host];
@@ -117,7 +117,7 @@ static NSMutableDictionary *containerReg = nil;
 
 -(void)stopLoading
 {
-//    NSLog( @"CHMURLProtocol:stopLoading" );
+//    DEBUG_OUTPUT( @"CHMURLProtocol:stopLoading" );
 }
 
 + (void)registerContainer:(CHMContainer *)container
@@ -126,7 +126,7 @@ static NSMutableDictionary *containerReg = nil;
 		containerReg = [[NSMutableDictionary alloc] initWithCapacity:1];
 	NSString *key = [container uniqueId];
 	[containerReg setObject:container forKey:key];
-	NSLog([NSString stringWithFormat:@"Container %@ registered", key]); 
+	DEBUG_OUTPUT([NSString stringWithFormat:@"Container %@ registered", key]); 
 }
 
 + (void)unregisterContainer:(CHMContainer *)container
@@ -135,7 +135,7 @@ static NSMutableDictionary *containerReg = nil;
 		containerReg = [[NSMutableDictionary alloc] init];
 	NSString *key = [container uniqueId];
 	[containerReg removeObjectForKey:key];
-	NSLog([NSString stringWithFormat:@"Container %@ deregistered", key]);
+	DEBUG_OUTPUT([NSString stringWithFormat:@"Container %@ deregistered", key]);
 }	
 
 @end

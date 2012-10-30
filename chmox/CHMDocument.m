@@ -53,7 +53,7 @@
 
 
 - (BOOL)readFromFile:(NSString *)fileName ofType:(NSString *)docType {
-	NSLog( @"CHMDocument:readFromFile:%@", fileName );
+	DEBUG_OUTPUT( @"CHMDocument:readFromFile:%@", fileName );
 	
     _container = [CHMContainer containerWithContentsOfFile:fileName];
     if( !_container ) return NO;
