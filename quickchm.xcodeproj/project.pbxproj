@@ -63,8 +63,8 @@
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C86B05260671AA6E00DD9006 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		D71D1A5B0E29E9D7007339A9 /* Readme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Readme.rtf; sourceTree = "<group>"; };
-		D7758E660E16B15700E20BAE /* CHMURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMURLProtocol.h; sourceTree = "<group>"; };
-		D7758E670E16B15700E20BAE /* CHMURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMURLProtocol.m; sourceTree = "<group>"; };
+		D7758E660E16B15700E20BAE /* CHMURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHMURLProtocol.h; path = ../CHMURLProtocol.h; sourceTree = "<group>"; };
+		D7758E670E16B15700E20BAE /* CHMURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHMURLProtocol.m; path = ../CHMURLProtocol.m; sourceTree = "<group>"; };
 		D7812FD20E16B2BB00BD7A13 /* QuickChmPageAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickChmPageAdaptor.h; sourceTree = "<group>"; };
 		D7812FD30E16B2BB00BD7A13 /* QuickChmPageAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickChmPageAdaptor.m; sourceTree = "<group>"; };
 		D78130550E16BCB800BD7A13 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
@@ -129,8 +129,6 @@
 			children = (
 				121D2F860D053636003EB4F4 /* chmlib */,
 				121D2F8B0D053636003EB4F4 /* chmox */,
-				D7758E660E16B15700E20BAE /* CHMURLProtocol.h */,
-				D7758E670E16B15700E20BAE /* CHMURLProtocol.m */,
 				61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */,
 				2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */,
 				08FB77B6FE84183AC02AAC07 /* main.c */,
@@ -156,6 +154,8 @@
 		121D2F8B0D053636003EB4F4 /* chmox */ = {
 			isa = PBXGroup;
 			children = (
+				D7758E660E16B15700E20BAE /* CHMURLProtocol.h */,
+				D7758E670E16B15700E20BAE /* CHMURLProtocol.m */,
 				121D2F900D053636003EB4F4 /* CHMDocument.m */,
 				121D2F910D053636003EB4F4 /* CHMDocument.h */,
 				121D2F920D053636003EB4F4 /* CHMContainer.m */,
