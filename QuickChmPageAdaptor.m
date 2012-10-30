@@ -214,9 +214,12 @@ CFDataRef adaptPage(NSData *page, CHMContainer *container, NSURL *pageUrl, NSMut
 	const char *imgRelativePath = [imgHomePath UTF8String];
 	
 	// Parse and replace hyper link
-	
-	htmlDocPtr doc = htmlParseDoc((xmlChar *)[page bytes], NULL);
-	
+	xmlChar *content = calloc([page length] + 1,sizeof(xmlChar));
+    [page getBytes:content length:[page length]];
+    DEBUG_OUTPUT(@"%s\n",content);
+    htmlDocPtr doc = htmlParseDoc(content, NULL);
+    free(content);
+    
 #ifdef DEBUG_MODE
 	xmlChar *tempmem;
 	int tempsize;
