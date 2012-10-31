@@ -29,7 +29,7 @@ xmlChar * ONCLICK = (xmlChar *)"onclick";
 xmlChar * SRC = (xmlChar *)"src";
 
 
-NSString *findMIME(NSString *img) {
+static NSString *findMIME(NSString *img) {
 	const char *ext = [[img pathExtension] UTF8String];
 	
 	if (!strcasecmp(ext, "bmp"))
@@ -77,7 +77,7 @@ NSString *findMIME(NSString *img) {
 }
 
 
-void processHrefNode(xmlNode * cur_node, const char *hrefHostPath, const char *hrefRelativePath) 
+static void processHrefNode(xmlNode * cur_node, const char *hrefHostPath, const char *hrefRelativePath) 
 {
 	char *url = (char *)xmlGetProp(cur_node, HREF);
 	if (url != NULL && xmlGetProp(cur_node, ONCLICK) == NULL) {
@@ -111,7 +111,7 @@ void processHrefNode(xmlNode * cur_node, const char *hrefHostPath, const char *h
 /**
  ** Set imge src to url scheme file://
  **/
-void processImgNodeToUrl(xmlNode * cur_node, const char *imgHostPath, const char *imgRelativePath) 
+static void processImgNodeToUrl(xmlNode * cur_node, const char *imgHostPath, const char *imgRelativePath) 
 {
 	char *src = (char *)xmlGetProp(cur_node, SRC);
 	
@@ -132,7 +132,7 @@ void processImgNodeToUrl(xmlNode * cur_node, const char *imgHostPath, const char
 /*
  * Set image data into the provided dictionary
  */
-void processImgNodeToDict(xmlNode * cur_node, NSURL *baseUrl, NSString *pageDir, CHMContainer *container, NSMutableDictionary **attachment) 
+static void processImgNodeToDict(xmlNode * cur_node, NSURL *baseUrl, NSString *pageDir, CHMContainer *container, NSMutableDictionary **attachment) 
 {
 	char *src = (char *)xmlGetProp(cur_node, SRC);
 	
@@ -167,7 +167,7 @@ void processImgNodeToDict(xmlNode * cur_node, NSURL *baseUrl, NSString *pageDir,
 	free(newSrc);
 }
 
-void replaceHref(xmlNode * a_node, ProcessContext *context)
+static void replaceHref(xmlNode * a_node, ProcessContext *context)
 {
     xmlNode *cur_node = NULL;	
     for (cur_node = a_node; cur_node; cur_node = cur_node->next) {

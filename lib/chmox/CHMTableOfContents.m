@@ -75,6 +75,13 @@ static htmlSAXHandler saxHandler = {
     NULL, /* xmlParserError */
     NULL, /* xmlParserError */
     NULL, /* getParameterEntity */
+    NULL, /* cdata */
+    NULL, /* externalSubset */
+    0,
+    NULL,
+    NULL,
+    NULL,
+    NULL
 };
 
 #pragma mark Lifecycle
@@ -142,7 +149,7 @@ static void elementDidStart( TOCBuilderContext *context, const xmlChar *name, co
 {
 //    DEBUG_OUTPUT( @"SAX:elementDidStart %s", name );
 
-    if( !strcasecmp( "ul", name ) ) {
+    if( !strcasecmp( "ul", (char *)name ) ) {
 //        DEBUG_OUTPUT( @"Stack BEFORE %@", context->topicStack );
 
 	if( context->name ) {
@@ -159,33 +166,33 @@ static void elementDidStart( TOCBuilderContext *context, const xmlChar *name, co
         
 //        DEBUG_OUTPUT( @"Stack AFTER %@", context->topicStack );
     }
-    else if( !strcasecmp( "li", name ) ) {
+    else if( !strcasecmp( "li", (char *)name ) ) {
 	// Opening depth level
 	context->name = nil;
 	context->path = nil;
     }
-    else if( !strcasecmp( "param", name ) && ( atts != NULL )) {
+    else if( !strcasecmp( "param", (char *)name ) && ( atts != NULL )) {
 	// Topic properties
 	const xmlChar *type = NULL;
 	const xmlChar *value = NULL;
 	
 	for( int i = 0; atts[ i ] != NULL ; i += 2 ) {
-	    if( !strcasecmp( "name", atts[ i ] ) ) {
+	    if( !strcasecmp( "name", (char *)atts[ i ] ) ) {
 		type = atts[ i + 1 ];
 	    }
-	    else if( !strcasecmp( "value", atts[ i ] ) ) {
+	    else if( !strcasecmp( "value", (char *)atts[ i ] ) ) {
 		value = atts[ i + 1 ];
 	    }
 	}
 	
 	if( ( type != NULL ) && ( value != NULL ) ) {
-	    if( !strcasecmp( "Name", type ) ) {
+	    if( !strcasecmp( "Name", (char *)type ) ) {
 		// Name of the topic
-		context->name = [[NSString alloc] initWithUTF8String:value];
+		context->name = [[NSString alloc] initWithUTF8String:(char *)value];
 	    }
-	    else if( !strcasecmp( "Local", type ) ) {
+	    else if( !strcasecmp( "Local", (char *)type ) ) {
 		// Path of the topic
-		context->path = [[NSString alloc] initWithUTF8String:value];
+		context->path = [[NSString alloc] initWithUTF8String:(char *)value];
 	    }
 	    else {
 		// Unsupported topic property
@@ -199,11 +206,11 @@ static void elementDidEnd( TOCBuilderContext *context, const xmlChar *name )
 {
 //    DEBUG_OUTPUT( @"SAX:elementDidEnd %s", name );
     
-    if( !strcasecmp( "li", name ) && context->name ) {
+    if( !strcasecmp( "li", (char *)name ) && context->name ) {
 	// New complete topic
 	createNewTopic( context );
     }
-    else if( !strcasecmp( "ul", name ) ) {
+    else if( !strcasecmp( "ul", (char *)name ) ) {
 //        DEBUG_OUTPUT( @"Stack BEFORE %@", context->topicStack );
 
 	// Closing depth level

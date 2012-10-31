@@ -128,7 +128,7 @@ static inline NSString * readTrimmedString( NSData *data, unsigned long offset )
 
 #pragma mark CHM Object loading
 
-- (BOOL)hasObjectWithPath: (NSString *)path
+- (bool)hasObjectWithPath: (NSString *)path
 {
     struct chmUnitInfo info;
     if( chm_resolve_object( _handle, [path UTF8String], &info ) != CHM_RESOLVE_SUCCESS ) {

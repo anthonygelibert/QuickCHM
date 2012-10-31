@@ -52,7 +52,7 @@
 #pragma mark NSDocument
 
 
-- (BOOL)readFromFile:(NSString *)fileName ofType:(NSString *)docType {
+- (bool)readFromFile:(NSString *)fileName ofType:(NSString *)docType {
 	DEBUG_OUTPUT( @"CHMDocument:readFromFile:%@", fileName );
 	
     _container = [CHMContainer containerWithContentsOfFile:fileName];

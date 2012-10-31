@@ -61,6 +61,13 @@ NULL, /* xmlParserWarning */
 NULL, /* xmlParserError */
 NULL, /* xmlParserError */
 NULL, /* getParameterEntity */
+NULL, /* cdata */
+NULL, /* externalSubset */
+0,
+NULL,
+NULL,
+NULL,
+NULL
 };
 
 

@@ -181,10 +181,11 @@ typedef unsigned long           UInt64;
 
 /* GCC */
 #ifdef __GNUC__
+#if !__APPLE__
 #define memcmp __builtin_memcmp
 #define memcpy __builtin_memcpy
 #define strlen __builtin_strlen
-
+#endif
 #elif defined(WIN32)
 static int ffs(unsigned int val)
 {
@@ -690,7 +691,7 @@ static Int64 _chm_fetch_bytes(struct chmFile *h,
                               UInt64 os,
                               Int64 len)
 {
-    Int64 readLen=0, oldOs=0;
+    Int64 readLen=0;
     if (h->fd  ==  CHM_NULL_FD)
         return readLen;
 
@@ -1568,7 +1569,7 @@ LONGINT64 chm_retrieve_object(struct chmFile *h,
         return (Int64)0;
 
     /* starting address must be in correct range */
-    if (addr < 0  ||  addr >= ui->length)
+    if (addr >= ui->length)
         return (Int64)0;
 
     /* clip length */
