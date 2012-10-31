@@ -7,68 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		121D2F980D053636003EB4F4 /* chm_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 121D2F870D053636003EB4F4 /* chm_lib.c */; };
-		121D2F990D053636003EB4F4 /* chm_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 121D2F880D053636003EB4F4 /* chm_lib.h */; };
-		121D2F9A0D053636003EB4F4 /* lzx.c in Sources */ = {isa = PBXBuildFile; fileRef = 121D2F890D053636003EB4F4 /* lzx.c */; };
-		121D2F9B0D053636003EB4F4 /* lzx.h in Headers */ = {isa = PBXBuildFile; fileRef = 121D2F8A0D053636003EB4F4 /* lzx.h */; };
-		121D2FA00D053636003EB4F4 /* CHMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 121D2F900D053636003EB4F4 /* CHMDocument.m */; };
-		121D2FA10D053636003EB4F4 /* CHMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 121D2F910D053636003EB4F4 /* CHMDocument.h */; };
-		121D2FA20D053636003EB4F4 /* CHMContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 121D2F920D053636003EB4F4 /* CHMContainer.m */; };
-		121D2FA30D053636003EB4F4 /* CHMContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 121D2F930D053636003EB4F4 /* CHMContainer.h */; };
-		121D2FA40D053636003EB4F4 /* CHMTableOfContents.h in Headers */ = {isa = PBXBuildFile; fileRef = 121D2F940D053636003EB4F4 /* CHMTableOfContents.h */; };
-		121D2FA50D053636003EB4F4 /* CHMTableOfContents.m in Sources */ = {isa = PBXBuildFile; fileRef = 121D2F950D053636003EB4F4 /* CHMTableOfContents.m */; };
-		121D2FA60D053636003EB4F4 /* CHMTopic.h in Headers */ = {isa = PBXBuildFile; fileRef = 121D2F960D053636003EB4F4 /* CHMTopic.h */; };
-		121D2FA70D053636003EB4F4 /* CHMTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 121D2F970D053636003EB4F4 /* CHMTopic.m */; };
 		121D2FAA0D05364E003EB4F4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121D2FA80D05364E003EB4F4 /* Cocoa.framework */; };
-		121D2FAD0D053736003EB4F4 /* prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 121D2FAC0D053736003EB4F4 /* prefix.pch */; };
 		123DB9CD0D07D322007FAFF3 /* LICENSE.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 123DB9CC0D07D322007FAFF3 /* LICENSE.rtf */; };
-		2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */; };
-		61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */; };
-		8D576312048677EA00EA77CD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB77B6FE84183AC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
 		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
-		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
 		C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86B05260671AA6E00DD9006 /* CoreServices.framework */; };
-		D7758E680E16B15700E20BAE /* CHMURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D7758E660E16B15700E20BAE /* CHMURLProtocol.h */; };
-		D7758E690E16B15700E20BAE /* CHMURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D7758E670E16B15700E20BAE /* CHMURLProtocol.m */; };
-		D7812FD40E16B2BB00BD7A13 /* QuickChmPageAdaptor.h in Headers */ = {isa = PBXBuildFile; fileRef = D7812FD20E16B2BB00BD7A13 /* QuickChmPageAdaptor.h */; };
-		D7812FD50E16B2BB00BD7A13 /* QuickChmPageAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D7812FD30E16B2BB00BD7A13 /* QuickChmPageAdaptor.m */; };
-		D78130570E16BCB800BD7A13 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D78130550E16BCB800BD7A13 /* StringUtil.h */; };
-		D78130580E16BCB800BD7A13 /* StringUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = D78130560E16BCB800BD7A13 /* StringUtil.c */; };
+		EAC235EC16419CA000A128C6 /* English.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EAC235EB16419CA000A128C6 /* English.lproj */; };
+		EAC235F816419CDB00A128C6 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC235F016419CDB00A128C6 /* GeneratePreviewForURL.m */; };
+		EAC235F916419CDB00A128C6 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC235F116419CDB00A128C6 /* GenerateThumbnailForURL.m */; };
+		EAC235FC16419CDB00A128C6 /* QuickChmPageAdaptor.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC235F416419CDB00A128C6 /* QuickChmPageAdaptor.h */; };
+		EAC235FD16419CDB00A128C6 /* QuickChmPageAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC235F516419CDB00A128C6 /* QuickChmPageAdaptor.m */; };
+		EAC235FE16419CDB00A128C6 /* StringUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = EAC235F616419CDB00A128C6 /* StringUtil.c */; };
+		EAC235FF16419CDB00A128C6 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC235F716419CDB00A128C6 /* StringUtil.h */; };
+		EAC2360116419CF600A128C6 /* README in Resources */ = {isa = PBXBuildFile; fileRef = EAC2360016419CF600A128C6 /* README */; };
+		EAC2363416419D1D00A128C6 /* chm_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = EAC2362516419D1D00A128C6 /* chm_lib.c */; };
+		EAC2363516419D1D00A128C6 /* chm_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC2362616419D1D00A128C6 /* chm_lib.h */; };
+		EAC2363616419D1D00A128C6 /* lzx.c in Sources */ = {isa = PBXBuildFile; fileRef = EAC2362716419D1D00A128C6 /* lzx.c */; };
+		EAC2363716419D1D00A128C6 /* lzx.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC2362816419D1D00A128C6 /* lzx.h */; };
+		EAC2363816419D1D00A128C6 /* CHMContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC2362A16419D1D00A128C6 /* CHMContainer.h */; };
+		EAC2363916419D1D00A128C6 /* CHMContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2362B16419D1D00A128C6 /* CHMContainer.m */; };
+		EAC2363A16419D1D00A128C6 /* CHMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC2362C16419D1D00A128C6 /* CHMDocument.h */; };
+		EAC2363B16419D1D00A128C6 /* CHMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2362D16419D1D00A128C6 /* CHMDocument.m */; };
+		EAC2363C16419D1D00A128C6 /* CHMTableOfContents.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC2362E16419D1D00A128C6 /* CHMTableOfContents.h */; };
+		EAC2363D16419D1D00A128C6 /* CHMTableOfContents.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2362F16419D1D00A128C6 /* CHMTableOfContents.m */; };
+		EAC2363E16419D1D00A128C6 /* CHMTopic.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC2363016419D1D00A128C6 /* CHMTopic.h */; };
+		EAC2363F16419D1D00A128C6 /* CHMTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2363116419D1D00A128C6 /* CHMTopic.m */; };
+		EAC2364016419D1D00A128C6 /* CHMURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC2363216419D1D00A128C6 /* CHMURLProtocol.h */; };
+		EAC2364116419D1D00A128C6 /* CHMURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC2363316419D1D00A128C6 /* CHMURLProtocol.m */; };
+		EAC2364416419D7E00A128C6 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EAC2364216419D7E00A128C6 /* main.c */; };
+		EAC2364516419D7E00A128C6 /* prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = EAC2364316419D7E00A128C6 /* prefix.pch */; };
 		F28CFBFD0A3EC0AF000ABFF5 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28CFBFC0A3EC0AF000ABFF5 /* ApplicationServices.framework */; };
 		F28CFC030A3EC0C6000ABFF5 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28CFC020A3EC0C6000ABFF5 /* QuickLook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		08FB77B6FE84183AC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
-		121D2F870D053636003EB4F4 /* chm_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chm_lib.c; sourceTree = "<group>"; };
-		121D2F880D053636003EB4F4 /* chm_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chm_lib.h; sourceTree = "<group>"; };
-		121D2F890D053636003EB4F4 /* lzx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lzx.c; sourceTree = "<group>"; };
-		121D2F8A0D053636003EB4F4 /* lzx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzx.h; sourceTree = "<group>"; };
-		121D2F900D053636003EB4F4 /* CHMDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMDocument.m; sourceTree = "<group>"; };
-		121D2F910D053636003EB4F4 /* CHMDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMDocument.h; sourceTree = "<group>"; };
-		121D2F920D053636003EB4F4 /* CHMContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMContainer.m; sourceTree = "<group>"; };
-		121D2F930D053636003EB4F4 /* CHMContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMContainer.h; sourceTree = "<group>"; };
-		121D2F940D053636003EB4F4 /* CHMTableOfContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMTableOfContents.h; sourceTree = "<group>"; };
-		121D2F950D053636003EB4F4 /* CHMTableOfContents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMTableOfContents.m; sourceTree = "<group>"; };
-		121D2F960D053636003EB4F4 /* CHMTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMTopic.h; sourceTree = "<group>"; };
-		121D2F970D053636003EB4F4 /* CHMTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMTopic.m; sourceTree = "<group>"; };
 		121D2FA80D05364E003EB4F4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		121D2FAC0D053736003EB4F4 /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 		123DB9CC0D07D322007FAFF3 /* LICENSE.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = LICENSE.rtf; sourceTree = "<group>"; };
-		2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
-		61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
 		8D576316048677EA00EA77CD /* quickchm.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = quickchm.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C86B05260671AA6E00DD9006 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
-		D71D1A5B0E29E9D7007339A9 /* Readme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Readme.rtf; sourceTree = "<group>"; };
-		D7758E660E16B15700E20BAE /* CHMURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHMURLProtocol.h; path = ../CHMURLProtocol.h; sourceTree = "<group>"; };
-		D7758E670E16B15700E20BAE /* CHMURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHMURLProtocol.m; path = ../CHMURLProtocol.m; sourceTree = "<group>"; };
-		D7812FD20E16B2BB00BD7A13 /* QuickChmPageAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickChmPageAdaptor.h; sourceTree = "<group>"; };
-		D7812FD30E16B2BB00BD7A13 /* QuickChmPageAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickChmPageAdaptor.m; sourceTree = "<group>"; };
-		D78130550E16BCB800BD7A13 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
-		D78130560E16BCB800BD7A13 /* StringUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = StringUtil.c; sourceTree = "<group>"; };
+		EAC235EB16419CA000A128C6 /* English.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English.lproj; path = rsrc/English.lproj; sourceTree = "<group>"; };
+		EAC235F016419CDB00A128C6 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		EAC235F116419CDB00A128C6 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		EAC235F416419CDB00A128C6 /* QuickChmPageAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickChmPageAdaptor.h; sourceTree = "<group>"; };
+		EAC235F516419CDB00A128C6 /* QuickChmPageAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickChmPageAdaptor.m; sourceTree = "<group>"; };
+		EAC235F616419CDB00A128C6 /* StringUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = StringUtil.c; sourceTree = "<group>"; };
+		EAC235F716419CDB00A128C6 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		EAC2360016419CF600A128C6 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		EAC2362516419D1D00A128C6 /* chm_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chm_lib.c; sourceTree = "<group>"; };
+		EAC2362616419D1D00A128C6 /* chm_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chm_lib.h; sourceTree = "<group>"; };
+		EAC2362716419D1D00A128C6 /* lzx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lzx.c; sourceTree = "<group>"; };
+		EAC2362816419D1D00A128C6 /* lzx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzx.h; sourceTree = "<group>"; };
+		EAC2362A16419D1D00A128C6 /* CHMContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMContainer.h; sourceTree = "<group>"; };
+		EAC2362B16419D1D00A128C6 /* CHMContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMContainer.m; sourceTree = "<group>"; };
+		EAC2362C16419D1D00A128C6 /* CHMDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMDocument.h; sourceTree = "<group>"; };
+		EAC2362D16419D1D00A128C6 /* CHMDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMDocument.m; sourceTree = "<group>"; };
+		EAC2362E16419D1D00A128C6 /* CHMTableOfContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMTableOfContents.h; sourceTree = "<group>"; };
+		EAC2362F16419D1D00A128C6 /* CHMTableOfContents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMTableOfContents.m; sourceTree = "<group>"; };
+		EAC2363016419D1D00A128C6 /* CHMTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMTopic.h; sourceTree = "<group>"; };
+		EAC2363116419D1D00A128C6 /* CHMTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMTopic.m; sourceTree = "<group>"; };
+		EAC2363216419D1D00A128C6 /* CHMURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHMURLProtocol.h; sourceTree = "<group>"; };
+		EAC2363316419D1D00A128C6 /* CHMURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHMURLProtocol.m; sourceTree = "<group>"; };
+		EAC2364216419D7E00A128C6 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = SOURCE_ROOT; };
+		EAC2364316419D7E00A128C6 /* prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = SOURCE_ROOT; };
 		F28CFBFC0A3EC0AF000ABFF5 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
 		F28CFC020A3EC0C6000ABFF5 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = /System/Library/Frameworks/QuickLook.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -92,18 +93,16 @@
 		089C166AFE841209C02AAC07 /* quickchm */ = {
 			isa = PBXGroup;
 			children = (
-				D71D1A5B0E29E9D7007339A9 /* Readme.rtf */,
-				123DB9CC0D07D322007FAFF3 /* LICENSE.rtf */,
-				121D2FAC0D053736003EB4F4 /* prefix.pch */,
-				08FB77AFFE84173DC02AAC07 /* Source */,
+				EAC235EF16419CDB00A128C6 /* Sources */,
 				089C167CFE841241C02AAC07 /* Resources */,
-				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				EAC2362316419D1D00A128C6 /* External Libraries */,
+				089C1671FE841209C02AAC07 /* External Frameworks */,
 				19C28FB6FE9D52B211CA2CBB /* Products */,
 			);
 			name = quickchm;
 			sourceTree = "<group>";
 		};
-		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+		089C1671FE841209C02AAC07 /* External Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				121D2FA80D05364E003EB4F4 /* Cocoa.framework */,
@@ -112,60 +111,18 @@
 				C86B05260671AA6E00DD9006 /* CoreServices.framework */,
 				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
 			);
-			name = "External Frameworks and Libraries";
+			name = "External Frameworks";
 			sourceTree = "<group>";
 		};
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EAC2360016419CF600A128C6 /* README */,
+				123DB9CC0D07D322007FAFF3 /* LICENSE.rtf */,
+				EAC235EB16419CA000A128C6 /* English.lproj */,
 				8D576317048677EA00EA77CD /* Info.plist */,
-				8D5B49A704867FD3000E48DA /* InfoPlist.strings */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		08FB77AFFE84173DC02AAC07 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				121D2F860D053636003EB4F4 /* chmlib */,
-				121D2F8B0D053636003EB4F4 /* chmox */,
-				61E3BCFA0870B4F2002186A0 /* GenerateThumbnailForURL.m */,
-				2C05A19B06CAA52B00D84F6F /* GeneratePreviewForURL.m */,
-				08FB77B6FE84183AC02AAC07 /* main.c */,
-				D7812FD20E16B2BB00BD7A13 /* QuickChmPageAdaptor.h */,
-				D7812FD30E16B2BB00BD7A13 /* QuickChmPageAdaptor.m */,
-				D78130550E16BCB800BD7A13 /* StringUtil.h */,
-				D78130560E16BCB800BD7A13 /* StringUtil.c */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		121D2F860D053636003EB4F4 /* chmlib */ = {
-			isa = PBXGroup;
-			children = (
-				121D2F870D053636003EB4F4 /* chm_lib.c */,
-				121D2F880D053636003EB4F4 /* chm_lib.h */,
-				121D2F890D053636003EB4F4 /* lzx.c */,
-				121D2F8A0D053636003EB4F4 /* lzx.h */,
-			);
-			path = chmlib;
-			sourceTree = "<group>";
-		};
-		121D2F8B0D053636003EB4F4 /* chmox */ = {
-			isa = PBXGroup;
-			children = (
-				D7758E660E16B15700E20BAE /* CHMURLProtocol.h */,
-				D7758E670E16B15700E20BAE /* CHMURLProtocol.m */,
-				121D2F900D053636003EB4F4 /* CHMDocument.m */,
-				121D2F910D053636003EB4F4 /* CHMDocument.h */,
-				121D2F920D053636003EB4F4 /* CHMContainer.m */,
-				121D2F930D053636003EB4F4 /* CHMContainer.h */,
-				121D2F940D053636003EB4F4 /* CHMTableOfContents.h */,
-				121D2F950D053636003EB4F4 /* CHMTableOfContents.m */,
-				121D2F960D053636003EB4F4 /* CHMTopic.h */,
-				121D2F970D053636003EB4F4 /* CHMTopic.m */,
-			);
-			path = chmox;
 			sourceTree = "<group>";
 		};
 		19C28FB6FE9D52B211CA2CBB /* Products */ = {
@@ -176,6 +133,60 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EAC235EF16419CDB00A128C6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2364216419D7E00A128C6 /* main.c */,
+				EAC2364316419D7E00A128C6 /* prefix.pch */,
+				EAC235F016419CDB00A128C6 /* GeneratePreviewForURL.m */,
+				EAC235F116419CDB00A128C6 /* GenerateThumbnailForURL.m */,
+				EAC235F416419CDB00A128C6 /* QuickChmPageAdaptor.h */,
+				EAC235F516419CDB00A128C6 /* QuickChmPageAdaptor.m */,
+				EAC235F616419CDB00A128C6 /* StringUtil.c */,
+				EAC235F716419CDB00A128C6 /* StringUtil.h */,
+			);
+			name = Sources;
+			path = src;
+			sourceTree = "<group>";
+		};
+		EAC2362316419D1D00A128C6 /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2362416419D1D00A128C6 /* chmlib */,
+				EAC2362916419D1D00A128C6 /* chmox */,
+			);
+			name = "External Libraries";
+			path = lib;
+			sourceTree = "<group>";
+		};
+		EAC2362416419D1D00A128C6 /* chmlib */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2362516419D1D00A128C6 /* chm_lib.c */,
+				EAC2362616419D1D00A128C6 /* chm_lib.h */,
+				EAC2362716419D1D00A128C6 /* lzx.c */,
+				EAC2362816419D1D00A128C6 /* lzx.h */,
+			);
+			path = chmlib;
+			sourceTree = "<group>";
+		};
+		EAC2362916419D1D00A128C6 /* chmox */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2362A16419D1D00A128C6 /* CHMContainer.h */,
+				EAC2362B16419D1D00A128C6 /* CHMContainer.m */,
+				EAC2362C16419D1D00A128C6 /* CHMDocument.h */,
+				EAC2362D16419D1D00A128C6 /* CHMDocument.m */,
+				EAC2362E16419D1D00A128C6 /* CHMTableOfContents.h */,
+				EAC2362F16419D1D00A128C6 /* CHMTableOfContents.m */,
+				EAC2363016419D1D00A128C6 /* CHMTopic.h */,
+				EAC2363116419D1D00A128C6 /* CHMTopic.m */,
+				EAC2363216419D1D00A128C6 /* CHMURLProtocol.h */,
+				EAC2363316419D1D00A128C6 /* CHMURLProtocol.m */,
+			);
+			path = chmox;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -183,16 +194,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121D2F990D053636003EB4F4 /* chm_lib.h in Headers */,
-				121D2F9B0D053636003EB4F4 /* lzx.h in Headers */,
-				121D2FA10D053636003EB4F4 /* CHMDocument.h in Headers */,
-				121D2FA30D053636003EB4F4 /* CHMContainer.h in Headers */,
-				121D2FA40D053636003EB4F4 /* CHMTableOfContents.h in Headers */,
-				121D2FA60D053636003EB4F4 /* CHMTopic.h in Headers */,
-				121D2FAD0D053736003EB4F4 /* prefix.pch in Headers */,
-				D7758E680E16B15700E20BAE /* CHMURLProtocol.h in Headers */,
-				D7812FD40E16B2BB00BD7A13 /* QuickChmPageAdaptor.h in Headers */,
-				D78130570E16BCB800BD7A13 /* StringUtil.h in Headers */,
+				EAC235FC16419CDB00A128C6 /* QuickChmPageAdaptor.h in Headers */,
+				EAC235FF16419CDB00A128C6 /* StringUtil.h in Headers */,
+				EAC2363516419D1D00A128C6 /* chm_lib.h in Headers */,
+				EAC2363716419D1D00A128C6 /* lzx.h in Headers */,
+				EAC2363816419D1D00A128C6 /* CHMContainer.h in Headers */,
+				EAC2363A16419D1D00A128C6 /* CHMDocument.h in Headers */,
+				EAC2363C16419D1D00A128C6 /* CHMTableOfContents.h in Headers */,
+				EAC2363E16419D1D00A128C6 /* CHMTopic.h in Headers */,
+				EAC2364016419D1D00A128C6 /* CHMURLProtocol.h in Headers */,
+				EAC2364516419D7E00A128C6 /* prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +260,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */,
 				123DB9CD0D07D322007FAFF3 /* LICENSE.rtf in Resources */,
+				EAC235EC16419CA000A128C6 /* English.lproj in Resources */,
+				EAC2360116419CF600A128C6 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,33 +299,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D576312048677EA00EA77CD /* main.c in Sources */,
-				2C05A19C06CAA52B00D84F6F /* GeneratePreviewForURL.m in Sources */,
-				61E3BCFB0870B4F2002186A0 /* GenerateThumbnailForURL.m in Sources */,
-				121D2F980D053636003EB4F4 /* chm_lib.c in Sources */,
-				121D2F9A0D053636003EB4F4 /* lzx.c in Sources */,
-				121D2FA00D053636003EB4F4 /* CHMDocument.m in Sources */,
-				121D2FA20D053636003EB4F4 /* CHMContainer.m in Sources */,
-				121D2FA50D053636003EB4F4 /* CHMTableOfContents.m in Sources */,
-				121D2FA70D053636003EB4F4 /* CHMTopic.m in Sources */,
-				D7758E690E16B15700E20BAE /* CHMURLProtocol.m in Sources */,
-				D7812FD50E16B2BB00BD7A13 /* QuickChmPageAdaptor.m in Sources */,
-				D78130580E16BCB800BD7A13 /* StringUtil.c in Sources */,
+				EAC235F816419CDB00A128C6 /* GeneratePreviewForURL.m in Sources */,
+				EAC235F916419CDB00A128C6 /* GenerateThumbnailForURL.m in Sources */,
+				EAC235FD16419CDB00A128C6 /* QuickChmPageAdaptor.m in Sources */,
+				EAC235FE16419CDB00A128C6 /* StringUtil.c in Sources */,
+				EAC2363416419D1D00A128C6 /* chm_lib.c in Sources */,
+				EAC2363616419D1D00A128C6 /* lzx.c in Sources */,
+				EAC2363916419D1D00A128C6 /* CHMContainer.m in Sources */,
+				EAC2363B16419D1D00A128C6 /* CHMDocument.m in Sources */,
+				EAC2363D16419D1D00A128C6 /* CHMTableOfContents.m in Sources */,
+				EAC2363F16419D1D00A128C6 /* CHMTopic.m in Sources */,
+				EAC2364116419D1D00A128C6 /* CHMURLProtocol.m in Sources */,
+				EAC2364416419D7E00A128C6 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8D5B49A704867FD3000E48DA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				089C167EFE841241C02AAC07 /* English */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2CA3261F0896AD4900168862 /* Debug */ = {
